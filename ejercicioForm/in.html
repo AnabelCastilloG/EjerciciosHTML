@@ -23,8 +23,7 @@
     button{
         margin-top: 15px;
     }
-    /* form{
-       
+    form{ 
         padding: 15px;
         border: solid orange 2px;
         border-radius: 2px 2px 0px 2px;
@@ -49,7 +48,7 @@
             <label for="NameAndLastname">Name and Lastname:</label>
                 <input type="text" name="NameAndLastname">
                 <label for="DateOfBirth">Date of birth:</label>
-                    <input type="date" name="DateOfBirth" id="birth" min="1900-01-01" max="2023-12-31">
+                    <input type="date" name="DateOfBirth" id="birth">
                 <label for="phone">Telephone number:</label>
                     <input type="tel" name="phone" id="phone" pattern="[0-9]{9}" required>
         </div>
@@ -57,10 +56,12 @@
             <label for="plans">Choose your plan:</label>
                 <select name="plans" id="plans">
                 <option value="">Please choose an option--</option>
-                <option value="Free plan">Free plan</option>
-                <option value="Price 1">100</option>
-                <option value="Price 2">200</option>
-                <option value="Price 3">300</option>
+                <optgroup label="Monthly">
+                    <option value="Free plan">Free plan</option>
+                    <option value="Price 1">100€</option>
+                    <option value="Price 2">200€</option>
+                    <option value="Price 3">300€</option>
+                </optgroup>
                 </select>
             <label for="Pro Plan">Pro Plan</label>
                 <input type="checkbox" name="Pro Plan" id="Pro Plan">
@@ -71,7 +72,7 @@
             <label for="CVC">CVC:</label>
             <input type="number" name="CVC" id="CVCnumber" pattern="[0-9]{3}" required>
             <label for="ExpirationDate">Expiration date:</label>
-            <input type="date" name="ExpirationDate" id="date" min="2023-01-01" max="2050-12-31">
+            <input type="date" name="ExpirationDate" id="date">
             <label for="BillingAddress">Billing Address:</label>
             <input type="text" name="BillingAddress" id="Address">
         </div>
